@@ -1,0 +1,47 @@
+.main_width {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "ralewayregular";
+    padding: 15px 0px;
+}
+
+.main_width div {
+    display: inline-block;
+}
+
+/* Panel górny */
+
+header {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+}
+
+.green_letters {
+    color: mediumaquamarine;
+    font-weight: bold;
+}
+
+.navigation {
+    float: right;
+    
+}
+
+li {
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
