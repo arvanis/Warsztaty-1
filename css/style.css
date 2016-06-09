@@ -85,7 +85,7 @@ header a {
 
 /* Część główna strony */
 
-section {
+.main {
     width: 100%;
     height: 600px;
     padding-top: 80px;
@@ -136,20 +136,20 @@ section {
     text-align: center;
 }
 
-section h1 {
+.main h1 {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-section p {
+.main p {
     margin-top: 30px;
     font-weight: bold;
     line-height: 1.5em;
 }
 
 
-section a {
+.main a {
     color: #24ba9f;
     text-transform: uppercase;
     text-decoration: none;
@@ -242,3 +242,177 @@ article {
 }
 
 
+/* Sekcja z cennikiem */
+
+.prices {
+    text-transform: uppercase;
+    color: grey;
+    background-color: #f1f1f1;
+    margin-top: 80px;
+    font-size: 20px;
+    position: relative;
+    height: 850px
+}
+
+.prices p {
+    font-weight: bold;
+    
+}
+
+.underline_long {
+    background-color: #24ba9f;
+    height: 7px;
+    width: 360px;
+    margin: 4px 0 100px 0;
+}
+
+.price_container {
+    width: 370px;
+    height: 600px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.grey {
+    background-color: #fafafa;
+    border: 4px solid lightgrey;
+    color: #24ba9f;
+}
+
+.green {
+    background-color: #24ba9f;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    border: 4px solid #24ba9f;
+}
+
+.prices .main_width div:last-child {
+    right: 0;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 145px;
+}
+
+.white {
+    background-color: white;
+    box-size: content-box;
+    border: 20px solid #24ba9f;
+}
+
+.darkgrey {
+    background-color: darkgrey;
+    border: 20px solid white;
+    box-shadow: 0 0 0 4px lightgrey;
+}
+
+.price_container h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.grey h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.price {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 30px auto;
+    border-radius: 50%;
+    background-color: white; 
+}
+
+.price + table {
+    margin: 200px auto 0 auto;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.pricetag {
+    text-align: center;
+    font-family: "ralewaybold";
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+
+.price_grey {
+    color: #AAAAAA;
+}
+
+.price_green {
+    color: #24ba9f;
+}
+
+.pricetag span {
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.pricetag p {
+    font-family: "ralewayregular";
+    font-size: 20px;
+}
+
+td {
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+    color: #24ba9f;
+}
+
+tr:nth-child(even) {
+    background-color: #EEEEEE;
+    color: #24ba9f;
+}
+
+.grey tr:nth-child(odd) {
+    background-color: #DDDDDD;
+    color: #666666;
+}
+
+.grey tr:nth-child(even) {
+    background-color: #EEEEEE;
+    color: #444444;
+}
+
+.join_button {
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    width: 160px;
+    bottom: 20px
+}
+
+.white_button {
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #24ba9f;
+    border: 4px solid white;
+    font-weight: bold;
+}
