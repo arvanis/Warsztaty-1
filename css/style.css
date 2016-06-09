@@ -88,7 +88,7 @@ header a {
 section {
     width: 100%;
     height: 600px;
-    padding-top: 110px;
+    padding-top: 80px;
     background: rgba(255,252,255,1);
     background: -moz-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,252,255,1)), color-stop(99%, rgba(201,201,201,1)), color-stop(100%, rgba(245,242,245,1)));
@@ -161,23 +161,84 @@ section a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 26px;
     display: block;
     padding: 15px;
     margin: 50px auto 0 auto;
-    width: 350px;
+    width: 270px;
     border-radius: 10px;
-}
-
-.section_txt a:hover {
-    background-color: #54da9f;
-}
-
-.section_txt a:active {
-    background-color: #54da9f;
-    box-shadow: 0px 0px 5px 5px grey inset;
 }
 
 .section_nav:last-child {
     right: 0;
 }
+
+
+
+/* Artykuł */
+
+#article_Clair, #article_Margarita {
+    width: 380px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: inline-block;
+}
+
+article {
+    position: relative;
+}
+
+#article_Clair  {
+    background-image: url("../images/box1_img.jpg");
+}
+
+#article_Margarita {
+    background-image: url("../images/box2_img.jpg");
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.image_label {
+    width: 100%;
+    height: 70px;
+    margin-top: 170px;
+    background-color: rgba(250, 250, 250, 0.3);
+    font-family: "ralewaybold";
+    padding: 15px;
+}
+
+.image_label span {
+    text-transform: uppercase;
+}
+
+.underline_short {
+    background-color: #24ba9f;
+    height: 7px;
+    width: 140px;
+}
+
+.article_txt {
+    width: 380px;
+    height: 280px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    border: 2px solid lightgrey;
+    line-height: 1.6em;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+.article_txt h1 {
+    font-family: "ralewaybold";
+    font-size: 16px;
+}
+
+.article_txt p:nth-child(3) {
+    margin-top: 20px;
+}
+
+
