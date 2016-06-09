@@ -13,22 +13,10 @@
 
 
 
-
 @font-face {
-    font-family: 'ralewaybold_italic';
-    src: url('../fonts/raleway-bolditalic.woff2') format('woff2'),
-         url('../fonts/raleway-bolditalic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-@font-face {
-    font-family: 'ralewayitalic';
-    src: url('../fonts/raleway-italic.woff2') format('woff2'),
-         url('../fonts/raleway-italic.woff') format('woff');
+    font-family: 'ralewaythin';
+    src: url('../fonts/raleway-thin.woff2') format('woff2'),
+         url('../fonts/raleway-thin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

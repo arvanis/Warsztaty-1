@@ -8,6 +8,8 @@
 }
 
 
+
+
 /* Panel górny */
 
 header {
@@ -29,16 +31,16 @@ header {
 
 .navigation {
     float: right;
-   
-    
 }
 
 li {
     display: inline-block;
     margin-left: 50px;
     position: relative;
-    padding: 0 0 40px 0;
-    
+}
+
+#about {
+    padding: 0 0 150px 0;
 }
 
 header a {
@@ -48,6 +50,11 @@ header a {
     font-weight: bold;
 }
 
+
+
+
+
+
 /* Rozwijane menu dla zakładki "O firmie" */
 
 .navigation_dropdown {
@@ -56,6 +63,7 @@ header a {
     background-color: black; 
     left: -20px;
     top: 50px;
+    z-index: 1;
 }
 
 .navigation_dropdown_pointer {
@@ -83,6 +91,7 @@ header a {
 }
 
 
+
 /* Część główna strony */
 
 .main {
@@ -97,15 +106,11 @@ header a {
     background: -ms-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
     background: linear-gradient(to bottom, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcff', endColorstr='#f5f2f5', GradientType=0 );
-    
-    
 }
-
 
 .section_nav {
     position: absolute;
-    margin: 140px auto;
-    
+    margin: 140px auto;   
 }
 
 .main_content {
@@ -148,7 +153,6 @@ header a {
     line-height: 1.5em;
 }
 
-
 .main a {
     color: #24ba9f;
     text-transform: uppercase;
@@ -175,6 +179,8 @@ header a {
 
 
 
+
+
 /* Artykuł */
 
 #article_Clair, #article_Margarita {
@@ -187,6 +193,8 @@ header a {
 
 article {
     position: relative;
+    margin-top: 20px;
+    height: 300px
 }
 
 #article_Clair  {
@@ -242,6 +250,9 @@ article {
 }
 
 
+
+
+
 /* Sekcja z cennikiem */
 
 .prices {
@@ -251,19 +262,18 @@ article {
     margin-top: 80px;
     font-size: 20px;
     position: relative;
-    height: 850px
+    height: 850px;
 }
 
-.prices p {
+.prices p, .contact p {
     font-weight: bold;
-    
 }
 
 .underline_long {
     background-color: #24ba9f;
     height: 7px;
     width: 360px;
-    margin: 4px 0 100px 0;
+    margin: 4px 0 0 0;
 }
 
 .price_container {
@@ -272,6 +282,7 @@ article {
     display: inline-block;
     border-radius: 5px;
     position: absolute;
+    margin: 100px 0 0 0;
 }
 
 .grey {
@@ -284,7 +295,7 @@ article {
     background-color: #24ba9f;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 100px auto;
     color: white;
     border: 4px solid #24ba9f;
 }
@@ -379,12 +390,12 @@ td {
 
 tr:nth-child(odd) {
     background-color: white;
-    color: #24ba9f;
+    color: #AAAAAA;
 }
 
 tr:nth-child(even) {
     background-color: #EEEEEE;
-    color: #24ba9f;
+    color: #AAAAAA;
 }
 
 .grey tr:nth-child(odd) {
@@ -404,15 +415,207 @@ tr:nth-child(even) {
     border-radius: 10px;
     position: absolute;
     width: 160px;
-    bottom: 20px
+    bottom: 20px;
+    margin: 0 auto;
 }
 
 .white_button {
     background-color: white;
     left: 0;
     right: 0;
-    margin: 0 auto;
     color: #24ba9f;
     border: 4px solid white;
     font-weight: bold;
+}
+
+
+
+/* Formularz kontaktowy */
+
+
+.contact {
+    text-transform: uppercase;
+    color: grey;
+    background-color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    position: relative;
+    height: 650px;
+}
+
+.msg input, textarea {
+    font-family: "ralewaythin";
+    width: 100%;
+    margin: auto 0;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 12px 10px;
+    line-height: 1.5em;
+    border: 1px solid #DDDDDD;
+}
+
+::-webkit-input-placeholder {
+    color: #DDDDDD;
+}
+
+:-moz-placeholder {
+   color: #DDDDDD;
+   opacity: 1;
+}
+
+::-moz-placeholder {
+   color: #DDDDDD;
+   opacity:  1;
+}
+
+:-ms-input-placeholder {
+   color: #DDDDDD;
+}
+
+textarea {
+    resize: none;
+    bottom: 0;
+}
+
+.msg, .submit {
+    height: 408px;
+    display: inline-block;
+    margin: 40px 0 0 0;
+}
+
+.msg {
+    width: 750px;
+}
+
+.msg input:nth-child(2) {
+    margin: 20px auto;
+}
+
+.submit {
+    width: 400px;
+    float: right;
+    position: relative;
+}
+
+#redChair {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 230px;
+    top: -40px;
+}
+
+
+
+
+/* Projekt checkboxa z działającym znacznikiem. Problemy: 
+- nie da się zmienić rozmiaru znacznika; 
+- nie da się otoczyć go ramką;
+
+
+.data {
+    display: inline-block;
+    position: absolute;
+    bottom: 100px;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    z-index: -1000; 
+    left: -1000px; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; margin: -1px; 
+    padding: 0; 
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 53px;
+    height: 80px; 
+    display: inline-block;
+    line-height:40px;
+    background-repeat:no-repeat;
+    background-position: 0 -20px;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-transform: none; 
+    color: #DDDDDD;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -80px;
+}
+						
+label.css-label {
+    background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_35e5be9c8e70b73b346cf79eec57aea1.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+   
+}
+*/
+
+#tick {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+}
+
+.submit span {
+    text-transform: none;
+    color: #DDDDDD;
+    position: absolute;
+    bottom: 125px;
+    width: 350px;
+    left: 70px;
+}
+
+.submit input[type="submit"] {
+    background-color: #24ba9f;
+    color: white;
+    font-family: "ralewayregular";
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 35px;
+}
+
+
+
+/* Stopka */
+
+footer p {
+    color: lightgrey;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer p:nth-child(2) {
+    text-transform: uppercase;
+    float: right;
+}
+
+footer p span {
+    font-family: "ralewaybold";
+    color: #BBBBBB;
+}
+
+.social {
+    position: absolute;
+    bottom: 7px;
+    right: 200px;
+    display: inline-block;
 }
