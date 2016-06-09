@@ -4,6 +4,7 @@
     margin: 0 auto;
     font-family: "ralewayregular";
     padding: 15px 0px;
+    position: relative;
 }
 
 
@@ -22,8 +23,8 @@ header {
 }
 
 .green_letters {
-    color: mediumaquamarine;
-    font-weight: bold;
+    color: #24ba9f;
+    font-family: "ralewaybold";
 }
 
 .navigation {
@@ -39,7 +40,7 @@ li {
     
 }
 
-a {
+header a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -78,4 +79,96 @@ a {
 
 #about:hover .navigation_dropdown {
     display: block;
+}
+
+
+/* Część główna strony */
+
+section {
+    width: 100%;
+    height: 600px;
+    padding-top: 110px;
+    background: rgba(255,252,255,1);
+    background: -moz-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,252,255,1)), color-stop(99%, rgba(201,201,201,1)), color-stop(100%, rgba(245,242,245,1)));
+    background: -webkit-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcff', endColorstr='#f5f2f5', GradientType=0 );
+    
+    position: relative;
+    
+}
+
+
+.section_nav {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    margin: 207px auto;
+}
+.main_content {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    margin: auto;
+}
+
+.section_image {
+    background-image: url("../images/black_chair.png");
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    vertical-align: middle;
+}
+
+.section_txt {
+    display: inline-block;
+    width: 450px;
+    height: 350px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section p {
+    margin-top: 30px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+
+section a {
+    color: #24ba9f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 86px;
+}
+
+.section_txt a {
+    background-color: #24ba9f;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    padding: 15px;
+    margin: 50px auto 0 auto;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.section_nav:last-child {
+    right: 0;
 }
