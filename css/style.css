@@ -6,9 +6,6 @@
     padding: 15px 0px;
 }
 
-.main_width div {
-    display: inline-block;
-}
 
 /* Panel górny */
 
@@ -21,6 +18,7 @@ header {
 .logo {
     color: white;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .green_letters {
@@ -30,12 +28,14 @@ header {
 
 .navigation {
     float: right;
+   
     
 }
 
 li {
     display: inline-block;
     margin-left: 50px;
+    position: relative;
     
 }
 
@@ -44,4 +44,38 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Rozwijane menu dla zakładki "O firmie" */
+
+.navigation_dropdown {
+    display: none;
+    position: absolute;
+    background-color: black; 
+    left: -20px;
+    top: 50px;
+}
+
+.navigation_dropdown_pointer {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid black;
+    position: absolute;
+    top: -15px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.navigation_dropdown a {
+    text-transform: none;
+    display: block;
+    margin: 10px 15px;
+    font-weight: normal;
+}
+
+#about:hover .navigation_dropdown {
+    display: block;
 }
