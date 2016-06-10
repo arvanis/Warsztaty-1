@@ -1,0 +1,689 @@
+.main_width {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "ralewayregular";
+    padding: 15px 0px;
+    position: relative;
+}
+
+
+
+
+/* Panel górny */
+
+header {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.green_letters {
+    color: #24ba9f;
+    font-family: "ralewaybold";
+}
+
+.navigation {
+    float: right;
+}
+
+li {
+    display: inline-block;;
+    position: relative;
+    margin-left: 35px;
+}
+
+#about {
+    padding: 0 0 150px 0;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 0 0 15px white;
+}
+
+
+
+
+
+/* Rozwijane menu dla zakładki "O firmie" */
+
+.navigation_dropdown {
+    display: none;
+    position: absolute;
+    background-color: black; 
+    left: -30px;
+    top: 50px;
+    z-index: 1;
+    width: 130px;
+    padding-top: 10px
+}
+
+.navigation_dropdown_pointer {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid black;
+    position: absolute;
+    top: -15px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.navigation_dropdown a {
+    text-transform: none;
+    display: block;
+    margin: 10px 15px;
+    font-weight: normal;
+}
+
+.navigation_dropdown a:hover {
+    box-shadow: 0 0 0 5px white;
+}
+
+#about:hover .navigation_dropdown {
+    display: block;
+}
+
+
+
+/* Część główna strony */
+
+.main {
+    width: 100%;
+    height: 600px;
+    padding-top: 110px;
+    background: rgba(255,252,255,1);
+    background: -moz-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,252,255,1)), color-stop(99%, rgba(201,201,201,1)), color-stop(100%, rgba(245,242,245,1)));
+    background: -webkit-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,252,255,1) 0%, rgba(201,201,201,1) 99%, rgba(245,242,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcff', endColorstr='#f5f2f5', GradientType=0 );
+}
+
+.section_nav {
+    position: absolute;
+    margin: 0 auto; 
+    padding: 224px 0;
+    top: -61px;
+}
+
+.section_nav:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+    box-shadow: 12px 0 15px -4px #AAAAAA, -12px 0 15px -4px #AAAAAA;
+}
+
+.main_content {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    margin: auto;
+}
+
+.section_image {
+    background-image: url("../images/black_chair.png");
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    vertical-align: middle;
+}
+
+.section_txt {
+    display: inline-block;
+    width: 460px;
+    height: 350px;
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.main h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main p {
+    margin-top: 30px;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 1.05em;
+}
+
+.main a {
+    color: #24ba9f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 86px;
+}
+
+.section_txt a {
+    background-color: #24ba9f;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
+    padding: 17px 0 10px 0;
+    margin: 50px auto 0 auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.section_txt a:hover {
+    background-color: #46dcbf;
+    color: white;
+    box-shadow: 0 0 10px 5px #AAAAAA;
+    font-size: 27px;
+}
+
+.section_txt a:active {
+    box-shadow: 0 0 5px 5px grey inset;
+    color: #DDDDDD;
+    font-size: 26px;
+    background-color: #24ba9f;
+}
+
+.section_nav:last-child {
+    right: 0;
+}
+
+
+
+
+
+/* Artykuł */
+
+#article_Clair, #article_Margarita {
+    width: 380px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: inline-block;
+}
+
+article {
+    position: relative;
+    margin-top: 20px;
+    height: 300px
+}
+
+#article_Clair  {
+    background-image: url("../images/box1_img.jpg");
+}
+
+#article_Margarita {
+    background-image: url("../images/box2_img.jpg");
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.image_label {
+    width: 100%;
+    height: 70px;
+    margin-top: 170px;
+    background-color: rgba(250, 250, 250, 0.3);
+    font-family: "ralewaybold";
+    padding: 15px;
+}
+
+.image_label span {
+    text-transform: uppercase;
+}
+
+.underline_short {
+    background-color: #24ba9f;
+    height: 7px;
+    width: 140px;
+}
+
+.article_txt {
+    width: 380px;
+    height: 320px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    border: 2px solid lightgrey;
+    line-height: 1.6em;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+.article_txt h1 {
+    font-family: "ralewaybold";
+    font-size: 16px;
+}
+
+.article_txt p:nth-child(3) {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Sekcja z cennikiem */
+
+.prices {
+    text-transform: uppercase;
+    color: grey;
+    background-color: #f1f1f1;
+    margin-top: 80px;
+    font-size: 20px;
+    position: relative;
+    height: 850px;
+}
+
+.prices p, .contact p {
+    font-weight: bold;
+}
+
+.underline_long {
+    background-color: #24ba9f;
+    height: 7px;
+    width: 360px;
+    margin: 4px 0 0 0;
+}
+
+.price_container {
+    width: 370px;
+    height: 600px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    margin: 100px 0 0 0;
+}
+
+.grey {
+    background-color: #fafafa;
+    border: 4px solid lightgrey;
+    color: #24ba9f;
+}
+
+.green {
+    background-color: #24ba9f;
+    color: white;
+    border: 4px solid #24ba9f;
+    left: 0;
+    right: 0;
+    margin: 100px auto;
+}
+
+.middle {
+    left: 0;
+    right: 0;
+    margin: 100px auto;
+}
+
+.prices .main_width div:last-child {
+    right: 0;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 145px;
+}
+
+.darkgrey {
+    background-color: darkgrey;
+    border: 20px solid white;
+    box-shadow: 0 0 0 4px lightgrey;
+}
+
+.price_container h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.grey h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.price {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 30px auto;
+    border-radius: 50%;
+    background-color: white; 
+}
+
+.price + table {
+    margin: 200px auto 0 auto;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.pricetag {
+    text-align: center;
+    font-family: "ralewaybold";
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.price_grey {
+    color: #AAAAAA;
+}
+
+
+.pricetag span {
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.pricetag p {
+    font-family: "ralewayregular";
+    font-size: 20px;
+}
+
+td {
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+    color: #AAAAAA;
+}
+
+tr:nth-child(even) {
+    background-color: #EEEEEE;
+    color: #AAAAAA;
+}
+
+.grey tr:nth-child(odd) {
+    background-color: #DDDDDD;
+    color: #666666;
+}
+
+.grey tr:nth-child(even) {
+    background-color: #EEEEEE;
+    color: #444444;
+}
+
+.join_button {
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    width: 160px;
+    bottom: 20px;
+    margin: 0 auto;
+}
+
+.price_container:hover {
+    margin: 100px auto;
+    color: white;
+    border: 4px solid #24ba9f;
+    background-color: #24ba9f;
+}
+
+.price_container:hover .circle {
+    background-color: white;
+    box-shadow: 0 0 0 0;
+    border: 20px solid #24ba9f;
+}
+
+.price_container:hover h2 {
+    font-weight: normal;
+}
+
+.price_container:hover .pricetag {
+    color: #24ba9f;
+}
+
+.price_container:hover .grey {
+    border: 4px solid white;
+}
+
+.price_container:hover .green {
+    background-color: white;
+    left: 0;
+    right: 0;
+    color: #24ba9f;
+    border: 4px solid white;
+    font-weight: bold;
+}
+
+.price_container:hover tr:nth-child(odd) {
+    background-color: white;
+    color: #AAAAAA;
+}
+
+.price_container:hover tr:nth-child(even) {
+    background-color: #EEEEEE;
+    color: #AAAAAA;
+}
+
+
+
+
+/* Formularz kontaktowy */
+
+
+.contact {
+    text-transform: uppercase;
+    color: grey;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    height: 650px;
+}
+
+.msg input, textarea {
+    font-family: "ralewaythin";
+    width: 100%;
+    margin: auto 0;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 12px 10px;
+    line-height: 1.5em;
+    border: 1px solid #DDDDDD;
+}
+
+::-webkit-input-placeholder {
+    color: #DDDDDD;
+}
+
+:-moz-placeholder {
+   color: #DDDDDD;
+   opacity: 1;
+}
+
+::-moz-placeholder {
+   color: #DDDDDD;
+   opacity:  1;
+}
+
+:-ms-input-placeholder {
+   color: #DDDDDD;
+}
+
+textarea {
+    resize: none;
+    bottom: 0;
+}
+
+.msg, .submit {
+    height: 408px;
+    display: inline-block;
+    margin: 40px 0 0 0;
+}
+
+.msg {
+    width: 750px;
+}
+
+.msg input:nth-child(2) {
+    margin: 20px auto;
+}
+
+.submit {
+    width: 400px;
+    float: right;
+    position: relative;
+}
+
+#redChair {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 230px;
+    top: -40px;
+}
+
+
+/* chceckbox */
+
+input[type=checkbox] {
+    display:none;
+}
+ 
+input[type=checkbox] + label {
+    background: white;
+    margin-top: 2px;
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
+input[type=checkbox]:checked + label {
+    background-image: url("../images/form_ok.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* Koniec checkboxa */
+
+#tick {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+}
+
+#tick img {
+    margin: 8px 4px 0 0;
+}
+
+.submit span {
+    text-transform: none;
+    color: #DDDDDD;
+    position: absolute;
+    width: 350px;
+    left: 60px;
+    font-size: 22px;
+    top: -1px;
+}
+
+.submit input[type="submit"] {
+    background-color: #24ba9f;
+    color: white;
+    font-family: "ralewayregular";
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 35px;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #46dcbf;
+    color: white;
+    box-shadow: 0 0 10px 5px #AAAAAA;
+    font-size: 36px;
+}
+
+.submit input[type="submit"]:active {
+    box-shadow: 0 0 5px 5px grey inset;
+    color: #DDDDDD;
+    font-size: 35px;
+    background-color: #24ba9f;
+}
+
+/* Stopka */
+
+footer p {
+    color: lightgrey;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer p:nth-child(2) {
+    text-transform: uppercase;
+    float: right;
+}
+
+footer p span {
+    font-family: "ralewaybold";
+    color: #BBBBBB;
+}
+
+.social {
+    position: absolute;
+    bottom: 7px;
+    right: 200px;
+    display: inline-block;
+}
+
+.social img:hover {
+    width: 37px;
+    height: 37px;
+}
+
+.social img:active {
+    width: 34px;
+    height: 34px;
+}
