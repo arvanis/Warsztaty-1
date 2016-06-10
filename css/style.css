@@ -442,7 +442,6 @@ tr:nth-child(even) {
     text-transform: uppercase;
     color: grey;
     background-color: white;
-    margin-top: 20px;
     font-size: 20px;
     position: relative;
     height: 650px;
