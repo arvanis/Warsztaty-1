@@ -510,60 +510,29 @@ textarea {
     top: -40px;
 }
 
+/* chceckbox */
 
-
-
-/* Projekt checkboxa z działającym znacznikiem. Problemy: 
-- nie da się zmienić rozmiaru znacznika; 
-- nie da się otoczyć go ramką;
-
-
-.data {
-    display: inline-block;
-    position: absolute;
-    bottom: 100px;
+input[type=checkbox] {
+    display:none;
+}
+ 
+input[type=checkbox] + label {
+    background: white;
+    margin-top: 2px;
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    padding: 0 0 0 0px;
 }
 
-input[type=checkbox].css-checkbox {
-    position: absolute; 
-    z-index: -1000; 
-    left: -1000px; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; margin: -1px; 
-    padding: 0; 
-    border: 0;
+input[type=checkbox]:checked + label {
+    background-image: url("../images/form_ok.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
-input[type=checkbox].css-checkbox + label.css-label {
-    padding-left: 53px;
-    height: 80px; 
-    display: inline-block;
-    line-height:40px;
-    background-repeat:no-repeat;
-    background-position: 0 -20px;
-    font-size: 24px;
-    vertical-align: middle;
-    cursor: pointer;
-    text-transform: none; 
-    color: #DDDDDD;
-}
 
-input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 -80px;
-}
-						
-label.css-label {
-    background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_35e5be9c8e70b73b346cf79eec57aea1.png);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-   
-}
-*/
+/* Koniec checkboxa */
 
 #tick {
     width: 55px;
@@ -583,10 +552,10 @@ label.css-label {
     text-transform: none;
     color: #DDDDDD;
     position: absolute;
-    bottom: 120px;
     width: 350px;
-    left: 70px;
+    left: 60px;
     font-size: 22px;
+    top: -1px;
 }
 
 .submit input[type="submit"] {
